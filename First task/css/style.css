@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+body{
+    background-color: thistle;
+}
+header {
+    position: fixed;
+    background: rgba(255,255,255,.5);
+    box-shadow: 3px 0 7px rgba(0,0,0,.3);
+    margin: 0 auto;
+    left:0;
+    right:0;
+    padding: 20px;
+    width: 1300px;
+    height: 50px;
+    background-color: #0A91AB;
+}
+header>img {
+    display: inline-block;
+    position:inherit;
+    top:5px !important;
+    width: 70px;
+    height: 70px;
+    transition: 0.1s ease-in all;
+
+}
+header>img:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 80px;
+    height:80px;
+}
+
+img::after{
+    content:'U_TECH';
+}
+
+nav {
+    display: inline;
+    float: inline-end;
+}
+
+li {
+    display:inline-block;
+    margin-left: 150px;
+    margin-top: 10px;
+    font-size: 21px;
+    color: #FFC045;
+    transition: 0.3s ease-in color;
+}
+
+
+li:hover {
+    color: red;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 50px;
+
+}
+main{
+    width: 1000px;
+    background-color:darkmagenta;
+}
