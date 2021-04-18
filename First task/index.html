@@ -10,24 +10,138 @@
     <title>First task</title>
 </head>
 <body>
+    <div class="wrapper">
     <header>
-        <img src="logo.png" alt="logo picture">
+        <img src="images/logo.png" alt="logo picture">
         <nav>
             <ul>
-                <a href="#"><li>КАРУСЕЛЬ</li></a>
-                <a href="#"><li>КАРТИНО4КИ</li></a>
-                <a href="#"><li>АККОРДЕОН</li></a>
-                <a href="#"><li>ФОРМА</li></a>
+                <a href="#carousel"><li>КАРУСЕЛЬ</li></a>
+                <a href="#pictures"><li>КАРТИНО4КИ</li></a>
+                <a href="#accordion"><li>АККОРДЕОН</li></a>
+                <a href="#form"><li>ФОРМА</li></a>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="carousel" id="carousel">
+        
 
-        </section>
+<div class="carousel-wrapper" id="carousel">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <span id="item-3"></span>
+    <div class="carousel-item item-1">
+      <h2>Item 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus   accumsan pretium dolor vel convallis. Aliquam erat volutpat. Maecenas lacus nunc, imperdiet sed mi et, finibus suscipit mi.</p>
+      <a class="arrow arrow-prev" href="#item-3"></a>
+      <a class="arrow arrow-next" href="#item-2"></a>
+    </div>
+    
+    <div class="carousel-item item-2">
+      <h2>Item 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan pretium dolor vel convallis. Aliquam erat volutpat.</p>
+      <a class="arrow arrow-prev" href="#item-1"></a>
+      <a class="arrow arrow-next" href="#item-3"></a>
+    </div>
+    
+    <div class="carousel-item item-3">
+      <h2>Item 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan pretium dolor vel convallis. Aliquam erat volutpat.</p>
+      <a class="arrow arrow-prev" href="#item-2"></a>
+      <a class="arrow arrow-next" href="#item-1"></a>
+    </div>
+</div> 
         <section class="pictures" id="pictures">
-
+            <h2>Тут можно увидеть очень крутых собак</h2>
+            <ul>
+                <li>
+                    <img src="images/pudel.jpg" alt="PUDEL">
+                </li>
+                <li>
+                    <img src="images/akita.jpg" alt="AKITA_INU">
+                </li>
+                <li>
+                    <img src="images/korgi.jpg" alt="KORGI">
+                </li>
+            </ul>
         </section>
+        <div class="accordion" id="accordion">
+            <h2>Сейчас сыграем на аккордеоне</h2>
+            <ul>
+              <li tabindex="1">
+                <div>
+                  <a href="#">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a>
+                </div>
+              </li>
+              <li tabindex="2">
+                <div>
+                  <a href="#">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a>
+                </div>
+              </li>
+              <li tabindex="3">
+                <div>
+                  <a href="#">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a>
+                </div>
+              </li>
+              <li tabindex="4">
+                <div>
+                  <a href="#">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a>
+                </div>
+              </li>
+              <li tabindex="5">
+                <div>
+                  <a href="#">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a>
+                </div>
+              </li>
+              <li tabindex="6">
+                <div>
+                  <a href="#">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        <div class="form" id="form">
+            <form>
+                <fieldset>
+                    <p><label for="name">Введи имя</label><br><input type="text" id="name"required="required"></p>
+                    <p><label for="which_dog">Какая собака понравилась больше?</label><br><input  type="text" list="which_dog" id="which_dog" required="required">
+                        <datalist id="which_dog">
+                            <option value="Пудель">Пудель</option>
+                            <option value="Акита Ину">Акита Ину</option>
+                            <option value="Корги">Корги</option>
+                        </datalist> 
+                    </p>
+                    <p><label for="rating">Поставь оценку от 1 до 10</label><br><input type="number" min="1" max="10" step="1" id="rating" required="required"></p>
+                </fieldset>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Сброс">
+            </form>
+        </div>
     </main>
+    <footer style="
+    background: linear-gradient(45deg, orange, transparent);
+">
+        <h1>SERHII OLSHANIVSKYI©</h1>
+    </footer>
+    </div>
+    
+    
 </body>
 </html>
