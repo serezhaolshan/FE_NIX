@@ -1,0 +1,53 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.overlap{
+    z-index:10;
+    position: absolute;
+    top: -58px;
+    height:600px;
+    max-width: 100%;
+    min-width: 100%;
+    text-align: center;
+}
+.form-layer{
+    /* display:block; */
+    background-color:blue;
+    opacity:50%;
+    position: relative;
+    top:58px;
+    height: 400px;
+    text-align: center;
+    margin: 20px;
+}
+li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+form{
+    background-color:white;
+    width:600px;
+    /* top:50%; */
+    top:28%;
+    left: 31%;
+    /* margin-right: 400px; */
+    position: absolute;
+}
+img{
+    float:left;
+}
+ul{
+    position: absolute;
+    top: 17px;
+    left: 140px;
+}
+fieldset{
+    height: 150px;
+}
+.form-btn{
+    position: absolute;
+    right: 230px;
+    top: 120px;
+}
+
