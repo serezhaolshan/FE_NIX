@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* TASK 1 */
+
+.container1{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    margin-bottom: 200px;
+}
+hr{
+    margin-bottom: 50px;
+}
+.one{
+    width: 800px;
+    height: 400px;
+    background-color: black;
+}
+.two{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color: blue;
+    opacity: 30%;
+    z-index: 10;
+    top: 200px;
+    left: 200px
+}
+
+/* TASK 2 */
+
+.wrapper2{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    margin-bottom: 100px;
+}
+.container2{
+    display: grid;
+    width: 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    ". . a a"
+    "b b . ."
+    ". c c ."
+    "d d d d";
+    gap: 10px 15px;
+}
+.item2{
+    border: 1px solid black;
+    grid-area: item2;
+    width: 100%;
+    height: 100%;
+}
+.A{
+    grid-area: a;
+    background-color: coral;
+}
+.B{
+    grid-area: b;
+    background-color: purple;
+}
+.C{
+    grid-area: c;
+    background-color: teal;
+}
+.D{
+    grid-area: d;
+    background-color: blue;
+}
+
+/* TASK 3 */
+.E{
+    grid-area: e;
+    background-color: orange;
+}
+.F{
+    grid-area: f;
+    background-color: purple;
+}
+.G{
+    grid-area:g;
+    background-color: turquoise;
+}
+.H{
+    grid-area: h;
+    background-color: whitesmoke;
+}
+.I{
+    grid-area: i;
+    background-color: purple;
+}
+.J{
+    grid-area: j;
+    background-color: turquoise;
+}
+.K{
+    grid-area: k;
+    background-color: orange;
+}
+.L{
+    grid-area: l;
+    background-color: whitesmoke;
+}
+.M{
+    grid-area: m;
+    background-color: whitesmoke;
+}
+.container3{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    height: 500px;
+    width: 700px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+    "e i k l"
+    "f f k m"
+    "f f g g"
+    "h j j .";
+    gap: 10px 15px;
+}
+.item3{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
